@@ -10,4 +10,6 @@ jobs:
     steps:
       - uses: s-weigand/trigger-mybinder-build@v1
         with:
+          service-name: 'gh'
+          target-state: 'master'
           target-repo: "wardsimon/easyCoreDD"
