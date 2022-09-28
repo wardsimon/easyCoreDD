@@ -16,8 +16,13 @@
     link.href = presentation_url
     link.innerHTML = repo_details
 
+    var binder_base_path ="https://mybinder.org/v2/gh/" + repo_details + "/master?urlpath=lab"
+
     var link = document.getElementById('binder_link');
-    link.href = "https://mybinder.org/v2/gh/" + repo_details + "/master?urlpath=lab"
+    link.href = binder_base_path
+
+    var link = document.getElementById('binder_link2');
+    link.href = binder_base_path
 
 </script>
 
@@ -64,7 +69,7 @@
 
 
 <!-- Need to specify the theme here -->
-<!-- First theme- is for colour, theme-xxx-font is for the font -->
+<!-- First theme is for colour, theme-xxx-font is for the font -->
 <body class="theme-lines theme-dosis-font" data-gr-c-s-loaded="true">
 
 <!-- Specify the main theme to be used here -->
@@ -79,11 +84,12 @@
 			<section class="title" id="title" style="display: none;" aria-hidden="true">
 				<div class="grid-wrapper">
 					<div class="content">
-						<h1><p>EasyScience Implementation,</p><p>Technologies and API.</p></h1>
+						<h1>Implementation Technologies and API</h1>
 						<div class="description">
-							Conference &#8594; When (date)
+							EasyScience Workshop &#8594; RAL (29/09/22)
 						</div>
 					</div>
+					<div class="logo"></div>
 					<div class="credit">
 						<hr>
 						<div class="name"><a href="https://wardsimon.com">Simon Ward󠁢󠁳󠁣󠁴󠁿</a></div>
@@ -93,18 +99,49 @@
 						<div class="label"><a href="https://twitter.com/IdleBrainZdev"><i class="fab fa-twitter social_icon"></i><span>&nbsp;IdleBrainZdev</span></a></div>
 <!--						<div class="label"><i class="fas fa-mars social_icon"></i><span>&nbsp;&nbsp;(he/him)</span></div>-->
 					</div>
-					<div class="logo">
-					</div>
 					<div>
-					<p><a class="presentation-url" id='presentation_reference'></a></p>
-					<p><a class="presentation-url" id='binder_link' target="_blank">Interactive Binder Version</a></p>
+						<p><a class="presentation-url" id='presentation_reference'></a></p>
+						<p><a class="presentation-url" id='binder_link' target="_blank">Interactive Binder Version</a></p>
 					</div>
 				</div>
 			</section>
 		</section>
 
+<!--		<section class="stack present" style="display: block;" data-previous-indexv="0">-->
+<!--			<section class="color&#45;&#45;white past" id="c" style="display: block;" hidden="" aria-hidden="true">-->
+<!--				<div class="grid-wrapper">-->
+<!--					<div class="header">-->
+<!--						<div class="logo">-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="content">-->
+<!--						<center>-->
+<!--							<h1>-->
+<!--								Contributors-->
+<!--							</h1>-->
+<!--							<div class="row">-->
+<!--								<div class="column">-->
+<!--									<ul>-->
+<!--										<li>A Helper</li>-->
+<!--										<li>B Helper</li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--								<div class="column">-->
+<!--									<ul>-->
+<!--										<li>AA Helper</li>-->
+<!--										<li>BB Helper</li>-->
+<!--										<li>And many others</li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</center>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</section>-->
+<!--		</section>-->
+
 		<section class="stack present" style="display: block;" data-previous-indexv="0">
-			<section class="color--white past" id="c" style="display: block;" hidden="" aria-hidden="true">
+			<section class="color--black past" id="outline" style="display: block;" hidden="" aria-hidden="true">
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo">
@@ -113,50 +150,20 @@
 					<div class="content">
 						<center>
 							<h1>
-								Contributors
-							</h1>
-							<div class="row">
-								<div class="column">
-									<ul>
-										<li>A Helper</li>
-										<li>B Helper</li>
-									</ul>
-								</div>
-								<div class="column">
-									<ul>
-										<li>AA Helper</li>
-										<li>BB Helper</li>
-										<li>And many others</li>
-									</ul>
-								</div>
-							</div>
-						</center>
-					</div>
-				</div>
-			</section>
-		</section>
-
-		<section class="stack present" style="display: block;" data-previous-indexv="0">
-			<section class="color--black past" id="d" style="display: block;" hidden="" aria-hidden="true">
-				<div class="grid-wrapper">
-					<div class="header">
-						<div class="logo">
-						</div>
-					</div>
-					<div class="content">
-						<center>
-							<h1>
-								Outline
+								Presentation Outline
 							</h1>
 							<ol>
 								<li>
-									Do  the first
+									Separation of Assets, What is EasyCore
 								</li>
 								<li>
-									Do the second
+									The features.
 								</li>
 								<li>
-									Do many
+									Let's get dirty.
+								</li>
+								<li>
+									Where are we going.
 								</li>
 							</ol>
 						</center>
@@ -166,7 +173,28 @@
 		</section>
 
 		<section class="stack present" style="display: block;" data-previous-indexv="0">
-			<section class="color--white past" id="e" style="display: block;" hidden="" aria-hidden="true">
+			<section class="color--white past" id="part1_start" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								Separation of Assets, What is EasyCore
+							</h1>
+							<img src="static/img/classroom.jpeg" width="50%"><br>
+							<small>
+								<a href="https://commons.wikimedia.org/wiki/File:Math_Class_in_School.jpg">
+									Preply.com Images, via Wikimedia Commons, CC-BY-2.0.
+								</a>
+							</small>
+						</center>
+					</div>
+				</div>
+			</section>
+			<section class="color--white past" id="part1_2" style="display: block;" hidden="" aria-hidden="true">
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo">
@@ -181,6 +209,144 @@
 							<small>
 								<a href="https://commons.wikimedia.org/wiki/File:Math_Class_in_School.jpg">
 									Preply.com Images, via Wikimedia Commons, CC-BY-2.0.
+								</a>
+							</small>
+						</center>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<section class="stack present" style="display: block;" data-previous-indexv="0">
+			<section class="color--white past" id="part2_start" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								The Features
+							</h1>
+							<img src="static/img/classroom.jpeg" width="50%"><br>
+							<small>
+								<a href="https://commons.wikimedia.org/wiki/File:Math_Class_in_School.jpg">
+									Preply.com Images, via Wikimedia Commons, CC-BY-2.0.
+								</a>
+							</small>
+						</center>
+					</div>
+				</div>
+			</section>
+			<section class="color--white past" id="part2_2" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								So, the first thing...
+							</h1>
+							<img src="static/img/classroom.jpeg" width="50%"><br>
+							<small>
+								<a href="https://commons.wikimedia.org/wiki/File:Math_Class_in_School.jpg">
+									Preply.com Images, via Wikimedia Commons, CC-BY-2.0.
+								</a>
+							</small>
+						</center>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<section class="stack present" style="display: block;" data-previous-indexv="0">
+			<section class="color--white past" id="part3_start" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								Lets get dirty...
+							</h1>
+							<img src="static/img/classroom.jpeg" width="50%"><br>
+							<small>
+								<a href="https://commons.wikimedia.org/wiki/File:Math_Class_in_School.jpg">
+									Preply.com Images, via Wikimedia Commons, CC-BY-2.0.
+								</a>
+							</small>
+						</center>
+					</div>
+				</div>
+			</section>
+			<section class="color--white past" id="part3_2" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								So, the first thing...
+							</h1>
+							<img src="static/img/classroom.jpeg" width="50%"><br>
+							<small>
+								<a href="https://commons.wikimedia.org/wiki/File:Math_Class_in_School.jpg">
+									Preply.com Images, via Wikimedia Commons, CC-BY-2.0.
+								</a>
+							</small>
+						</center>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<section class="stack present" style="display: block;" data-previous-indexv="0">
+			<section class="color--white past" id="part4_start" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								The future
+							</h1>
+							<img src="static/img/classroom.jpeg" width="50%"><br>
+							<small>
+								<a href="https://commons.wikimedia.org/wiki/File:Math_Class_in_School.jpg">
+									Preply.com Images, via Wikimedia Commons, CC-BY-2.0.
+								</a>
+							</small>
+						</center>
+					</div>
+				</div>
+			</section>
+			<section class="color--white past" id="part4_4" style="display: block;" hidden="" aria-hidden="true">
+				<script>
+					var link = document.getElementById('binder_link2');
+					link.href = binder_base_path + '/index.ipynb'
+				</script>
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								So, the first thing...
+							</h1>
+							<small>
+								<a id="binder_link2">
+									Some Binder Notebook
 								</a>
 							</small>
 						</center>
