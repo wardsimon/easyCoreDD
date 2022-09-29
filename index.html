@@ -24,6 +24,18 @@
     var link = document.getElementById('binder_link2');
     link.href = binder_base_path
 
+    var link = document.getElementById('ex1');
+    var example_1 = binder_base_path + "/tree/example1.ipynb"
+    link.href = example_1
+
+    var link = document.getElementById('ex2');
+    var example_2 = binder_base_path + "/tree/example2.ipynb"
+    link.href = example_2
+
+    var link = document.getElementById('ex3');
+    var example_3 = binder_base_path + "/tree/dimmer_example.ipynb"
+    link.href = example_3
+
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=default"></script>
@@ -34,6 +46,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<style id="stndz-style">div[class*="item-container-obpd"], a[data-redirect*="paid.outbrain.com"], a[onmousedown*="paid.outbrain.com"] { display: none !important; } a div[class*="item-container-ad"] { height: 0px !important; overflow: hidden !important; position: absolute !important; } div[data-item-syndicated="true"] { display: none !important; } .grv_is_sponsored { display: none !important; } .zergnet-widget-related { display: none !important; }
 		</style>
+	</head>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         
@@ -77,7 +90,7 @@
 <div class="reveal pattern--lines none has-vertical-slides has-horizontal-slides ready" role="application" data-transition-speed="default" data-background-transition="fade">
 
 	<!-- Slides start here -->
-	<se class="slides" style="width: 1920px; height: 941px;">
+	<div class="slides" style="width: 1920px; height: 941px;">
 
 		<!-- These are the introductory slides -->
 		<section class="stack past" style="display: none;" data-previous-indexv="0" hidden="" aria-hidden="true">
@@ -160,7 +173,7 @@
 									The features.
 								</li>
 								<li>
-									Let's get dirty.
+									Code Examples.
 								</li>
 								<li>
 									Where are we going.
@@ -173,7 +186,7 @@
 		</section>
 
 		<section class="stack present" style="display: block;" data-previous-indexv="0">
-			<section class="color--white past" id="part1_start" style="display: block;" hidden="" aria-hidden="true">
+			<section class="color--black past" id="part1_start" style="display: block;" hidden="" aria-hidden="true">
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo">
@@ -184,16 +197,97 @@
 							<h1>
 								Separation of Assets, What is EasyCore
 							</h1>
-							<img src="static/img/classroom.jpeg" width="50%"><br>
+							<img src="static/img/separation.jpeg" width="30%"><br>
 							<small>
-								<a href="https://commons.wikimedia.org/wiki/File:Math_Class_in_School.jpg">
-									Preply.com Images, via Wikimedia Commons, CC-BY-2.0.
+								<a href="https://ahluwalia-law.com/wp-content/uploads/2016/09/shutterstock_232173790-1024x819.jpg">
+									Ahluwalia-law.com
 								</a>
 							</small>
 						</center>
 					</div>
 				</div>
 			</section>
+			<section class="color--white past" id="part1_0" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								What are the aims.
+							</h1>
+							<ol>
+								<li>
+									Ability to create components from building blocks
+								</li>
+								<li>
+									Components can be optimized against data.
+								</li>
+								<li>
+									Optimization is <b>NOT</b> just LM
+								</li>
+								<li>
+									Components can offload calculations to established libraries.
+								</li>
+								<li>
+									Components can be reused.
+								</li>
+								<li>
+									Access to modern concepts made easy.
+								</li>
+							</ol>
+						</center>
+					</div>
+				</div>
+			</section>
+
+			<section class="color--white past" id="part1_1" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								The building blocks.
+							</h1>
+							<div>
+								<div class="row">
+									<div class="column">
+										<h2>Descriptors</h2>
+										<ul>
+											<li>Named variables</li>
+											<li>Not necessarily numbers</li>
+											<li>Can not be used for optimization</li>
+										</ul>
+										<h2>Parameters</h2>
+										<ul>
+											<li>Based on Descriptors</li>
+											<li>Only numbers</li>
+											<li>Can be used for optimization</li>
+										</ul>
+									</div>
+									<div class="column">
+										<h2>
+											Base Objects
+										</h2>
+										<ul>
+											<li>Used to create components</li>
+											<li>Can be composed of components and parameters</li>
+											<li>Knows everything it's composed of</li>
+											<li>Can be linked to an interface</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</center>
+					</div>
+				</div>
+			</section>
+
 			<section class="color--white past" id="part1_2" style="display: block;" hidden="" aria-hidden="true">
 				<div class="grid-wrapper">
 					<div class="header">
@@ -203,14 +297,26 @@
 					<div class="content">
 						<center>
 							<h1>
-								So, the first thing...
+								Creating a Base Core Object
 							</h1>
-							<img src="static/img/classroom.jpeg" width="50%"><br>
-							<small>
-								<a href="https://commons.wikimedia.org/wiki/File:Math_Class_in_School.jpg">
-									Preply.com Images, via Wikimedia Commons, CC-BY-2.0.
-								</a>
-							</small>
+							<img src="static/img/ObjectLayout.svg" width="50%">
+						</center>
+					</div>
+				</div>
+			</section>
+
+			<section class="color--white past" id="part1_3" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								Creating an interface.
+							</h1>
+							<img src="static/img/InterfaceLayout.svg" width="50%">
 						</center>
 					</div>
 				</div>
@@ -218,7 +324,7 @@
 		</section>
 
 		<section class="stack present" style="display: block;" data-previous-indexv="0">
-			<section class="color--white past" id="part2_start" style="display: block;" hidden="" aria-hidden="true">
+			<section class="color--black past" id="part2_start" style="display: block;" hidden="" aria-hidden="true">
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo">
@@ -229,16 +335,46 @@
 							<h1>
 								The Features
 							</h1>
-							<img src="static/img/classroom.jpeg" width="50%"><br>
+							<img src="static/img/happy.webp" width="50%"><br>
 							<small>
-								<a href="https://commons.wikimedia.org/wiki/File:Math_Class_in_School.jpg">
-									Preply.com Images, via Wikimedia Commons, CC-BY-2.0.
+								<a href="https://unsplash.com/photos/E9ANYNkN4Sc">
+									Ambreen Hasan, Unsplash license
 								</a>
 							</small>
 						</center>
 					</div>
 				</div>
 			</section>
+
+			<section class="color--white past" id="part2_1" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								Easy Interfacing
+							</h1>
+							<img src="static/img/shaking_hands.avif" width="20%"><br>
+							<small>
+								<a href="https://theconversation.com/shaking-hands-is-disgusting-heres-what-else-you-can-do-98097">
+									Shutterstock.
+								</a>
+							</small>
+							<div>
+							<ul>
+								<li>Calculation not limited by a single backend</li>
+								<li>Seamlessly switch</li>
+								<li>No need to learn specific calculators</li>
+							</ul>
+							</div>
+						</center>
+					</div>
+				</div>
+			</section>
+
 			<section class="color--white past" id="part2_2" style="display: block;" hidden="" aria-hidden="true">
 				<div class="grid-wrapper">
 					<div class="header">
@@ -248,14 +384,66 @@
 					<div class="content">
 						<center>
 							<h1>
-								So, the first thing...
+								Easy Optimization
 							</h1>
-							<img src="static/img/classroom.jpeg" width="50%"><br>
+							<div>
+								<ul>
+									<li>LMfit, Bumps and DFO_LS libraries are available</li>
+									<li>All methods of each libraries.</li>
+									<li>Multi dimensional datasets.</li>
+									<li>Multi objective optimization.</li>
+									<li>Fast to implement</li>
+									<li>Does not care about calculator</li>
+								</ul>
+							</div>
+						</center>
+					</div>
+				</div>
+			</section>
+
+			<section class="color--white past" id="part2_3" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								Easy Parallelization
+							</h1>
+							<div>
+							<img src="static/img/dataset-diagram-logo.png" width="30%"><br>
 							<small>
-								<a href="https://commons.wikimedia.org/wiki/File:Math_Class_in_School.jpg">
-									Preply.com Images, via Wikimedia Commons, CC-BY-2.0.
+								<a href="https://github.com/pydata/xarray/">
+									X-Array - Apache-2.0 license.
 								</a>
 							</small>
+								<div>
+								<ul>
+									<li>Datasets can be stored in X-Array</li>
+									<li>Dask scheduling built in</li>
+									<li>Slicing and MPI</li>
+								</ul>
+								</div>
+							</div>
+						</center>
+					</div>
+				</div>
+			</section>
+
+			<section class="color--white past" id="part2_4" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								Easy Re-Use
+							</h1>
+							<img src="static/img/ECryst.svg" width="50%">
 						</center>
 					</div>
 				</div>
@@ -263,7 +451,7 @@
 		</section>
 
 		<section class="stack present" style="display: block;" data-previous-indexv="0">
-			<section class="color--white past" id="part3_start" style="display: block;" hidden="" aria-hidden="true">
+			<section class="color--black past" id="part3_start" style="display: block;" hidden="" aria-hidden="true">
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo">
@@ -284,6 +472,7 @@
 					</div>
 				</div>
 			</section>
+
 			<section class="color--white past" id="part3_2" style="display: block;" hidden="" aria-hidden="true">
 				<div class="grid-wrapper">
 					<div class="header">
@@ -293,22 +482,98 @@
 					<div class="content">
 						<center>
 							<h1>
-								So, the first thing...
+								Example 1 - a Line :-/
 							</h1>
-							<img src="static/img/classroom.jpeg" width="50%"><br>
-							<small>
-								<a href="https://commons.wikimedia.org/wiki/File:Math_Class_in_School.jpg">
-									Preply.com Images, via Wikimedia Commons, CC-BY-2.0.
+							<div class="row">
+								<div class="column">
+									<img src="static/img/Ex1_1.png" width="50%">
+								</div>
+								<div class="column">
+									<img src="static/img/Ex1_2.png" width="50%">
+								</div>
+							</div>
+							<div>
+								<ul>
+									<li>We show 2 methods for object creation</li>
+									<li>We optimize values</li>
+									<li>We use different minimizer libraries and methods</li>
+								</ul>
+							</div>
+								<a class="presentation-url" id="ex1" target="_blank">
+									Launch a binder Notebook
 								</a>
-							</small>
 						</center>
 					</div>
 				</div>
 			</section>
+
+			<section class="color--white past" id="part3_3" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								Example 2 - a 2D optimization
+							</h1>
+							<div class="row">
+								<div class="column">
+									<img src="static/img/Ex2_1.png" width="50%"><br>
+								</div>
+								<div class="column">
+									<img src="static/img/Ex2_2.png" width="50%"><br>
+								</div>
+							</div>
+							<div>
+								<ul>
+									<li>We use x-array</li>
+									<li>We optimize in 2D</li>
+								</ul>
+							</div>
+							<a class="presentation-url" id="ex2" target="_blank">
+								Launch a binder Notebook
+							</a>
+						</center>
+					</div>
+				</div>
+			</section>
+
+			<section class="color--white past" id="part3_4" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								Example 3 - a real life example
+							</h1>
+							<h2>
+								A 4D optimization to a spin ladder model
+							</h2>
+							<img src="static/img/dispersion.png" width="50%">
+							<div>
+							<ul>
+								<li>We use x-array</li>
+								<li>We use ND visualization</li>
+								<li>We optimize to a 4D dataset</li>
+							</ul>
+							</div>
+							<a class="presentation-url" id="ex3" target="_blank">
+								Launch a binder Notebook
+							</a>
+						</center>
+					</div>
+				</div>
+			</section>
+
 		</section>
 
 		<section class="stack present" style="display: block;" data-previous-indexv="0">
-			<section class="color--white past" id="part4_start" style="display: block;" hidden="" aria-hidden="true">
+			<section class="color--black past" id="part4_start" style="display: block;" hidden="" aria-hidden="true">
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo">
@@ -319,21 +584,17 @@
 							<h1>
 								The future
 							</h1>
-							<img src="static/img/classroom.jpeg" width="50%"><br>
+							<img src="static/img/spaceship.jpeg" width="50%"><br>
 							<small>
-								<a href="https://commons.wikimedia.org/wiki/File:Math_Class_in_School.jpg">
-									Preply.com Images, via Wikimedia Commons, CC-BY-2.0.
+								<a href="https://www.brickshop.eu/lego/lego-icons/lego-10283-nasa-space-shuttle-discovery.html">
+									brickshop.eu
 								</a>
 							</small>
 						</center>
 					</div>
 				</div>
 			</section>
-			<section class="color--white past" id="part4_4" style="display: block;" hidden="" aria-hidden="true">
-				<script>
-					var this_jupyter = document.getElementById('binder_link2');
-					this_jupyter.href = binder_base_path + '/index.ipynb'
-				</script>
+			<section class="color--white past" id="part4_1" style="display: block;" hidden="" aria-hidden="true">
 				<div class="grid-wrapper">
 					<div class="header">
 						<div class="logo">
@@ -342,19 +603,77 @@
 					<div class="content">
 						<center>
 							<h1>
-								So, the first thing...
+								Enhancing JuPyter Notebook support
 							</h1>
-							<small>
-								<a id="binder_link2">
-									Some Binder Notebook
-								</a>
-							</small>
+							<div>
+								<br><a href="https://github.com/holoviz/panel">
+									<img src="static/img/panel_logo.png" width="40%" ></a><br>
+								<ul>
+									<li>Use panel for better JuPyter integration</li>
+									<li>Auto widgets</li>
+									<li>Interactive web apps</li>
+									<li>Leading to advanced callbacks</li>
+								</ul>
+								<p>Work in progress...</p>
+							</div>
+						</center>
+					</div>
+				</div>
+			</section>
+			<section class="color--white past" id="part4_2" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								JAX - Compilation, ML and Optimization
+							</h1>
+							<div>
+								<br><a href="https://github.com/google/jax">
+									<img src="static/img/jax_logo.png" width="20%"></a><br>
+								<ul>
+									<li>Speed up calculations</li>
+									<li>ND Convolutions</li>
+									<li>ML applications?</li>
+									<li>Custom autograd optimization</li>
+								</ul>
+								<p>Available in an easyCore branch</p>
+							</div>
+						</center>
+					</div>
+				</div>
+			</section>
+			<section class="color--white past" id="part4_3" style="display: block;" hidden="" aria-hidden="true">
+				<div class="grid-wrapper">
+					<div class="header">
+						<div class="logo">
+						</div>
+					</div>
+					<div class="content">
+						<center>
+							<h1>
+								PyMC3 - Bayesian optimization and modeling
+							</h1>
+							<div>
+								<br><a href="https://docs.pymc.io/en/v3/index.html">
+									<img src="static/img/PyMC3_banner.svg" width="20%">
+								</a><br>
+								<ul>
+									<li>Use advanced Bayesian samplers</li>
+									<li>Advanced optimization statistics</li>
+									<li>Probability distributions, Gaussian process, Variational inference</li>
+								</ul>
+								<p>Available in an easyCore branch</p>
+							</div>
 						</center>
 					</div>
 				</div>
 			</section>
 		</section>
-	</se>
+	</div>
 </div>
 
 
